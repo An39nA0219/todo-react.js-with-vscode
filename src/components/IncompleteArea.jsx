@@ -1,13 +1,18 @@
-export const IncompleteArea = () => {
+export const IncompleteArea = (props) => {
+  const { incompleteLists, addCompleteList, deleteIncompleteList } = props;
   return (
     <div className="incomplete-area">
       <h2>Incomplete List</h2>
       <ul>
-        <li className="list-items">
-          wash socks
-          <button>Done</button>
-          <button>Delete</button>
-        </li>
+        {incompleteLists.map((list, i) => {
+          return (
+            <li className="list-items">
+              {list}
+              <button onClick={() => addCompleteList(i)}>Done</button>
+              <button onClick={() => deleteIncompleteList(i)}>Delete</button>
+            </li>
+          );
+        })}
       </ul>
     </div>
   );

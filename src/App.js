@@ -1,5 +1,6 @@
 import './App.css';
 import { InputArea } from './components/InputArea'
+import { IncompleteArea} from './components/IncompleteArea'
 import { CompleteArea } from './components/CompleteArea'
 
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <h1>TODO List</h1>
       <InputArea></InputArea>
+      <IncompleteArea></IncompleteArea>
       <CompleteArea></CompleteArea>
     </>
   );

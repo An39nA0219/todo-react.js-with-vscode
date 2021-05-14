@@ -48,8 +48,17 @@ h2 {
   border-radius: 0px 0px 3px 3px;
 }
 
-.complete-area {
+.incomplete-area {
   background-color: lightgoldenrodyellow;
+  width: 300px;
+  min-height: 250px;
+  border-radius: 3px;
+  margin-top: 15px;
+  padding-top: 10px;
+}
+
+.complete-area {
+  background-color:rgb(250, 231, 234);
   width: 300px;
   min-height: 250px;
   border-radius: 3px;

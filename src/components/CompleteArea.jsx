@@ -5,13 +5,11 @@ export const CompleteArea = () => {
       <ul>
         <li className="list-items">
           make lunch
-          <button>Done</button>
-          <button>Delete</button>
+          <button>Back</button>
         </li>
         <li>
           take a picture
-          <button>Done</button>
-          <button>Delete</button>
+          <button>Back</button>
         </li>
       </ul>
     </div>
